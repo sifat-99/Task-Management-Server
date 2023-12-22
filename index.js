@@ -11,16 +11,8 @@ require("dotenv").config();
 const port = process.env.PORT || 5001;
 
 // middleware
-app.use(cors(
-    {
-      origin: [
-        'https://task-management-1b5d2.web.app/',
-        'https://task-management-1b5d2.firebaseapp.com/',
-      ],
-      credentials: true,
-    }
-  ));
-// app.use(cors());
+
+app.use(cors());
 app.use(express.json());
 
 // console.log(`process.env.DB_USER: ${process.env.DB_USER}`);
