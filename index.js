@@ -14,9 +14,8 @@ const port = process.env.PORT || 5001;
 app.use(cors(
     {
       origin: [
-        // 'http://localhost:5173',
         'https://task-management-1b5d2.web.app/',
-        'https://task-management-1b5d2.firebaseapp.com/'
+        'https://task-management-1b5d2.firebaseapp.com/',
       ],
       credentials: true,
     }
